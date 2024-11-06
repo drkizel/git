@@ -39,9 +39,11 @@
 - **modified** (англ. «изменённый»).
 
 ## Состояния Git status:
+- **untracked**;
 - **staged**;
-- **modified**;
-- **untracked**.
+- **tracked**;
+- **modified**.
+
 
 ### Схема mermaid для git status:
 ```mermaid
@@ -63,11 +65,11 @@ graph LR
 Выйти из редактора Vim: нажать Esc, ввести :qa!, нажать Enter.
 
 ## «Откат» файлов и коммитов:
-- **git restore --staged hello.txt** — переведи файл hello.txt из состояния staged обратно в untracked или modified;
+- **git restore --staged hello.txt** — переводит файл hello.txt из состояния staged обратно в untracked или modified;
 - **git restore hello.txt** — вернёт файл к последней версии, которая была сохранена через git commit или git add;
-- **git reset --hard b576d89** — удали все незакоммиченные изменения из staging и «рабочей зоны» вплоть до указанного коммита.
+- **git reset --hard b576d89** — удалит все незакоммиченные изменения из staging и «рабочей зоны» вплоть до указанного коммита.
 
 ## Просмотр изменений:
-- **git diff** (от англ. difference, «отличие», «разница») — покажи изменения в «рабочей зоне», то есть в modified-файлах;
-- **git diff a9928ab 11bada1** — выведи разницу между двумя коммитами;
-- **git diff** --staged** — покажи изменения, которые добавлены в staged-файлах.
+- **git diff** (от англ. difference, «отличие», «разница») — покажет изменения в «рабочей зоне», то есть в modified-файлах;
+- **git diff a9928ab 11bada1** — выведет разницу между двумя коммитами;
+- **git diff --staged** — покажет изменения, которые добавлены в staged-файлах.
