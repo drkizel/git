@@ -38,13 +38,6 @@
 - **tracked** (англ. «отслеживаемый»);
 - **modified** (англ. «изменённый»).
 
-## Состояния Git status:
-- **untracked**;
-- **staged**;
-- **tracked**;
-- **modified**.
-
-
 ### Схема mermaid для git status:
 ```mermaid
 graph LR
