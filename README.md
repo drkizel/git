@@ -43,7 +43,7 @@
 ### Схема mermaid для git status:
 ```mermaid
 graph LR
-    untracked -- "git add" --> staged (+tracked)
+    untracked -- "git add" --> staged
     staged -- "git commit" --> tracked
     tracked -- "edit file" --> modified
     modified -. "edit file" .-> tracked
