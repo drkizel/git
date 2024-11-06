@@ -46,6 +46,6 @@ stateDiagram-v2
     untracked --> staged (+tracked)
     staged (+tracked) --> tracked
     tracked --> modified
-    modified -.  .-> tracked
+    modified -.-> tracked
     modified --> staged (+tracked)
 ```
