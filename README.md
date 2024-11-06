@@ -46,6 +46,6 @@ graph LR
     untracked -- "git add" --> staged
     staged -- "git commit" --> tracked
     tracked -- "edit file" --> modified
-    modified -- "git add" --> tracked
+    modified -- "git add" --> staged
     staged -. "changes" .-> modified
 ```
