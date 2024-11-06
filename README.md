@@ -42,10 +42,10 @@
 
 ### Схема mermaid для git status:
 ```mermaid
-flowchart LR
-    untracked --> staged (+tracked)
-    staged (+tracked) --> tracked
-    tracked --> modified
-    modified -.-> tracked
-    modified --> staged (+tracked)
+graph LR
+    untracked -- "git add" --> staged (+tracked)
+    staged -- "git commit" --> tracked
+    tracked -- "edit file" --> modified
+    modified -. "edit file" .-> tracked
+    modified -- "git add" --> staged
 ```
