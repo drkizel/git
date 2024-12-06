@@ -2,6 +2,9 @@
 ---
 ## Команды
 
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 ### Команды навигации:
 - **cd** - переход к указанной директории
     - cd .. - переход на уровень выше
