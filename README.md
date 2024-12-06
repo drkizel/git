@@ -3,7 +3,7 @@
 ## Команды
 
 > [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
+> Просто для проверки : )
 
 ### Команды навигации:
 - **cd** - переход к указанной директории
