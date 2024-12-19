@@ -1,14 +1,14 @@
 site_name: TechWriter Help
 site_description: Technical Writer helps. Bash, Git, Markdown and Mkdocs # Описание сайта, добавляется в meta-теги
-theme: # Тема сайта, информация о ее параметрах
+theme: # Тема сайта, информация о параметрах
   name: material # Название темы
-  logo: logo.svg # Ссылка на логотип сайта
+  # logo: logo.svg # Ссылка на логотип сайта
   font:
     text: Roboto # Шрифт текста
     code: Roboto Mono # Шрифт для текста кода
   features:
     #- navigation.sections
-    - navigation.path # Хлебные крошки
+    - navigation.path # Хлебные крошки (указание текущего положения на сайте)
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
     #- navigation.tabs # Верхнее меню
     #- navigation.tabs.sticky # Фиксация верхнего меню
@@ -16,27 +16,27 @@ theme: # Тема сайта, информация о ее параметрах
     #- navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
     #- toc.integrate # Фиксирует оглавление страницы в левом меню
     - navigation.instant # Функция быстрой загрузки страниц
-    - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
+    - navigation.top # Добавляет кнопку «к началу»
     - search.suggest # Подсказки при вводе поискового запроса
     - search.highlight # Подсветка результатов поиска в тексте страницы
     - content.code.copy # Кнопка копирования в блоке кода
 
   language: ru # Язык
-  palette: # Настройки светлой и тёмной тем
+  palette: # Настройки темы
     # Настройки светлой темы
     - scheme: default 
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
-        name: Выключить солнышко # Всплывающий текст-подсказка
+        name: Светлая тема # Всплывающий текст-подсказка
       primary: blue # Основной цвет
-      accent: purple # Акцентный цвет
+      accent: light blue # Акцентный цвет
     # Настройки тёмной темы
     - scheme: slate
       toggle:
         icon: material/weather-night
-        name: Позвать солнышко
-      primary: deep purple
-      accent: blue
+        name: Тёмная тема
+      primary: indigo
+      accent: deep purple
 
 nav: # Структура сайта
     - Главная страница: index.md
@@ -51,7 +51,7 @@ nav: # Структура сайта
 extra:
   social: # Ссылки на соц.сети
     - icon: fontawesome/brands/github-alt # Иконка гитхаба
-      link: https://github.com/{your_account} # Ссылка на гитхаб
+      link: https://github.com/drkizel # Ссылка на гитхаб
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
